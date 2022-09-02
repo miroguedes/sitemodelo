@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <title>Site Modelo</title>
+   
+</head>
+<body>
+    <header>
+    <div id="headercontainer">
+        <a href="#">
+            <div id="logocontainer"></div>
+        </a>
+        <nav >
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="servicos.html">SERVIÇOS</a></li>
+                <li><a href="clientes.html">CLIENTES</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                
+                              
+            </ul>       </nav>
+    </div>
+    </header>
+
+    <main>
+        <section>
+            <div id="banner">
+                <img id="slide">
+            
+            </div>
+        </section>
+
+        <section id="sobrenoscontainer">
+                <div id="sobrenos">
+                    <span><h1>Sobre nós</h1></span><br>
+                    <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ea atque aliquid molestiae enim. Nulla.<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ducimus autem quod modi totam obcaecati ipsa eum atque quam, dignissimos molestias quis? Quas minima non inventore libero voluptatibus illo dolore.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ex a nemo asperiores unde tempore repellendus deleniti placeat atque exercitationem, itaque vero praesentium incidunt veritatis consectetur cupiditate neque molestiae inventore doloremque quisquam impedit iste quasi.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis commodi maxime doloribus beatae voluptates? Dicta praesentium ipsum voluptas doloremque voluptates est, inventore asperiores ex? Minima!</p></span>
+                </div>
+                <div id="sobrenosimg"><img src="imagens/sobrenosimg.png" alt=""></div>
+                        
+             </section>
+
+
+         
+         
+
+    </main>
+
+    <footer>
+        <div id="footercontainer">
+            
+            
+                
+                    
+                        <div class="logofooter"><img src="imagens/logobranco.png"></div>
+                    
+                
+        
+            <div id="linksfooter">
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="servicos.html">SERVIÇOS</a></li>
+                    <li><a href="clientes.html">CLIENTES</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    
+                                  
+                </ul> 
+            </div>
+            <div id="endereco">
+            <span><h3>Endereço:</h3><br>
+                <p>Rua: Se fosse minha, 100</p><br>
+                <p>Alguma Cidade - SP</p><br>
+                <p>CEP: 12345-678</p>
+            </span>
+            </div>
+            <div id="social">
+                <a href="https://www.instagram.com/alfalorenn/" target="_blank">
+                    <div id="instagram"></div>
+                </a>
+                <a href="https://wa.me/5511986291278" target="_blank">
+                    <div id="whatsapp"></div>
+                </a>
+            </div>
+
+
+        </div>
+
+         
+    </footer>
+
+    <script> 
+        let slide = document.getElementById("slide");
+    let images = ["imagens/s1.png", "imagens/s2.png", "imagens/s3.png", "imagens/s4.png" ];
+    let i = 0;
+    
+    function slideShow(){
+        slide.src = images[i];
+    
+        if (i < images.length -1) {
+            i++;
+        }else {
+            i = 0;
+        }
+        setTimeout(slideShow, 2000);
+    }
+    slideShow();
+    
+    </script
+    
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --corheader:rgb(31, 30, 30);
+   
+
+}
+
+body{
+    width: 1280px;
+}
+
+
+/*header*/
+
+#headercontainer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1280px;
+    height: 120px;
+    box-shadow: 1px 0 15px 2px;
+    align-items: center;
+    background-color: var(--corheader);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+
+
+#logocontainer{
+   display: flex;
+   margin-left: 50px;
+   height: 120px;
+   width: 150px;
+   background-image: url(../imagens/logobranco.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   
+   
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    
+    
+    
+}
+
+ul a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+ul li a:hover{
+    padding: 10px;
+    color: #F29D35;
+}
+
+
+
+ul li{
+    list-style: none;
+    padding: 5px;
+    font-weight: bold;
+    font-size: .8rem;
+    display: flex;
+    color: whitesmoke;
+ 
+}
+
+
+
+
+main{
+    margin-top: 120px;
+}
+
+
+
+#slide{
+    margin-top: 120px;
+    display: block;
+    width: 1280px;
+    height: 520px;
+    margin: auto;
+}
+
+
+
+#sobrenoscontainer{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+    
+}
+
+#sobrenos{
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+   align-items: center;
+   width: 70%;
+    
+    
+}
+
+#sobrenos h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    text-align: center;
+    color: black;
+}
+
+#sobrenos p{
+    text-align: center;
+    line-height: 25px;
+    color: #2B2B2B;
+}
+
+#sobrenosimg img{
+    margin-top: 60px;
+    margin-left: 70px;
+
+}
+
+
+#sobrenosimg img{
+    
+    width: 90%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 15px;
+    
+    
+   
+}
+
+/*Clientes*/
+
+#clientescontainer{
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+#clientesimg{
+    width: 250px;
+    height: 250px;
+    margin-top: -100px;
+    
+    
+    
+    
+}
+
+#clientesimg img{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    
+}
+
+.col-md-3 {
+    position: relative;
+}
+.col-md-3 .seg {
+    visibility: hidden;
+    opacity: 0;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.col-md-3:hover .seg {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*servicos*/
+
+#servico1{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 70vw;
+}
+
+#servico1 h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#servico1 p{
+    text-align: center;
+    line-height: 23px;
+}
+
+#servico1img img{
+    width: 450px;
+    
+}
+
+
+
+#servico2{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 60vw;
+}
+
+#servico2 h2{
+   text-align: center;
+}
+
+#servico2 p{
+    text-align: center;
+    line-height: 23px;
+}
+
+#servico2img img{
+    margin-left: 180px;
+    
+    width: 400px;
+}
+
+
+#servico3{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 70vw;
+}
+
+#servico3 h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#servico3 p{
+    text-align: center;
+    line-height: 23px;
+}
+
+#servico3img img{
+    width: 450px;
+    
+}
+
+
+#servico4{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 70vw;
+}
+
+#servico4 h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#servico4 p{
+    text-align: center;
+    line-height: 23px;
+}
+
+#servico4img img{
+    width: 450px;
+    
+}
+
+
+#servico5{
+    margin: auto;
+    margin-bottom: 80px;
+    width: 60vw;
+}
+
+#servico5 h2{
+   text-align: center;
+}
+
+#servico5 p{
+    text-align: center;
+    line-height: 23px;
+}
+
+#servico5img img{
+    margin-left: 180px;
+    
+    width: 400px;
+}
+
+/*footer*/
+
+#footercontainer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1280px;
+    height: 250px;
+    background-color: rgb(31, 30, 30);
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+    box-shadow: 1px 0 10px 2px;
+}
+
+.logofooter{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 250px;
+    height: 150px;
+    display: flex;
+   
+   
+}
+
+#linksfooter ul{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#linksfooter  li{
+    line-height: 0px;
+    display: flex;
+    padding: 12px;
+    
+    
+    
+}
+
+
+
+#endereco{
+    margin-top: 45px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+   
+}
+
+#endereco p{
+    line-height: 25px;
+}
+
+#social{
+    margin-top: 40px;
+    display: flex;
+    width: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 80px;
+}
+
+#instagram{
+    width: 40px;
+    height: 40px;
+    background-image: url(../imagens/instagram.png);
+    background-size: contain;
+}
+
+#whatsapp{
+    width: 40px;
+    height: 40px;
+    background-image: url(../imagens/whatsapp.png);
+    background-size: contain;
+    margin-left: 20px;
+
+}
+
+/*link contato*/
+
+#contato{
+    margin: auto;
+    margin-top: 175px;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(224, 224, 224, 0.507);
+}
+
+#contato h3{
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+#contato p{
+    margin-left: 30px;
+}
+
+#socialcontato{
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+}
+
+#socialcontato img{
+    height: 40px;
+    width: 40px;
+}
+
+#socialinstagram{
+    margin-left: 20px;
+}
+
+
+
+#mapa iframe{
+    margin-top: 50px;
+    width: 1280px;
+    height: 400px;
+}
+
+@media (max-width:585px){
+    
+}   
+    
+/*media iphone*/
+
+@media (max-width:416px){
+
+}
+    
