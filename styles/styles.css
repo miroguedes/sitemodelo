@@ -13,7 +13,7 @@
 }
 
 body{
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
 }
 
@@ -34,7 +34,6 @@ body{
     background-color: var(--corheader);
     position: fixed;
     top:0;
-    
     z-index: 10;
 }
 
